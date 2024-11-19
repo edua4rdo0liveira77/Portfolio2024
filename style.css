@@ -1,269 +1,146 @@
-
-
-*{
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  .poppins-thin {
-      font-family: "Poppins", sans-serif;
-      font-weight: 100;
-      font-style: normal;
-    }
-    
-    .poppins-extralight {
-      font-family: "Poppins", sans-serif;
-      font-weight: 200;
-      font-style: normal;
-    }
-    
-    .poppins-light {
-      font-family: "Poppins", sans-serif;
-      font-weight: 300;
-      font-style: normal;
-    }
-    
-    .poppins-regular {
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-    
-    .poppins-medium {
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
-      font-style: normal;
-    }
-    
-    .poppins-semibold {
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-      font-style: normal;
-    }
-    
-    .poppins-bold {
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-    }
-    
-    .poppins-extrabold {
-      font-family: "Poppins", sans-serif;
-      font-weight: 800;
-      font-style: normal;
-    }
-    
-    .poppins-black {
-      font-family: "Poppins", sans-serif;
-      font-weight: 900;
-      font-style: normal;
-    }
-    
-    .poppins-thin-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 100;
-      font-style: italic;
-    }
-    
-    .poppins-extralight-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 200;
-      font-style: italic;
-    }
-    
-    .poppins-light-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 300;
-      font-style: italic;
-    }
-    
-    .poppins-regular-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-style: italic;
-    }
-    
-    .poppins-medium-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
-      font-style: italic;
-    }
-    
-    .poppins-semibold-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-      font-style: italic;
-    }
-    
-    .poppins-bold-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-      font-style: italic;
-    }
-    
-    .poppins-extrabold-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 800;
-      font-style: italic;
-    }
-    
-    .poppins-black-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 900;
-      font-style: italic;
-    }
-    
-}
-body{
-  background-color: #223;
-  height: 100vh;
 }
 
-.interface{
+/* Fonte global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #2b2d42;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Container centralizado */
+.interface {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 20px;
 }
 
-.flex{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 	2rem;
+/* Estilo do cabeçalho */
+header {
+  background-color: #121212;
+  padding: 20px 0;
 }
 
-.flex > h2, .flex > h1{
-  text-align: center;
-}
-
-.linha{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.atividade{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  flex: 0 1 360px;
-  background-color: #ffffff20;
-  box-shadow: 0px 0px 4px 1px #ffffffa0;
-  border-radius: 12px;
-  padding: 1rem;
-  gap: 1rem;
-  justify-content: space-around;
-  height: fit-content;
-}
-
-.atividade > h2{
-  text-align: center;
-}
-
-.atividade img{
-  width: 250px;
-  margin: 0 auto;
-  border-radius: 12px;
-  animation: ease-in-out;
-  transition: 350ms;
-}
-
-.atividade img:hover{
-  width: 100%;
-}
-
-header{
-  padding: 40PX 4%;
-}
-
-header > .interface{
+header .interface {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header a{
-  color:rgb(128, 128, 128); 
-  text-decoration: none;
-  display: inline-block;
-}
-
-header a:hover{
-color: #fff;
-transform: scale(1.05);
-}
-
-header nav ul{
-  list-style-type: nome;
-}
-header nav ul li{
-  display: inline-block;
-  padding: 0 40px;
-
-}
-header .btn-contato button{
-padding: 10px 40px;
-font-size: 18px;
-font-weight: 600;
-background-color: orangered;
-color: white;
-border: 0;
-border-radius: 30px;
-cursor: pointer;
-
-} 
-
-header .btn-contato button:hover{
-box-shadow: 0px 0px 8px orangered;
-}
-
-section.topo-do-site{
-  padding: 40px 4%;
-}
-
-section.topo-do-site.flex{
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-
-
-.topo-do-site h1{
- color: #fff;
- font-size: 42px;
- line-height: 40px;
-} 
-
-.topo-do-site .txt-topo-do-site h1 span{
-  color: #fff;
-}
-
-.topo-do-site .txt-topo-do-site p{
-  color: floralwhite;
-  margin: 80px 0px;
-}
-
-p, h1, h2, h3, h4, h5, h6{
-  color: #fff;
-}
-
-.logo img{
-  width: 200px;
+header .logo img {
+  width: 150px;
   height: auto;
 }
 
-.pdf{
-  width: 100%;
-  height: 300px;
-  border-radius: 12px;
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.pointer{
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #000000;
+}
+
+header .btn-contato button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #be8519;
+  border: none;
+  border-radius: 30px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-a:link, a:visited{
-  color: #fff;
-  margin: auto;
+header .btn-contato button:hover {
+  background-color: #ff9f1c;
+  transform: scale(1.05);
+}
+
+/* Conteúdo principal */
+.topo-do-site {
+  padding: 40px 0
+}
+.minha-imagem {
+  border: 5px solid white; /* Borda sólida branca */
+  border-radius: 10px;    /* Arredonda os cantos da borda */
+  padding: 0px;           /* Espaço interno para separar a borda do conteúdo */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombras (opcional) */
+}
+/* Links padrão */
+a {
+  color: #ffffff; /* Escolha a cor que preferir */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Links visitados */
+a:visited {
+  color: #ffffff; /* Cor para links visitados */
+}
+
+/* Links ao passar o mouse */
+a:hover {
+  color: #000000; /* Cor ao passar o mouse */
+  text-decoration: underline; /* Adiciona um sublinhado */
+}
+
+/* Links ativos (ao clicar) */
+a:active {
+  color: #000000; /* Cor ao clicar no link */
+}
+/* Define estilos globais para atividades */
+.atividade {
+  width: 100%; /* Ajusta para o tamanho máximo dentro do contêiner */
+  max-width: 300px; /* Define uma largura máxima para manter uniformidade */
+  margin: 10px auto; /* Centraliza e cria espaçamento entre atividades */
+  padding: 15px;
+  background-color: #f9f9f9; /* Cor de fundo para destacar a atividade */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+/* Ajusta títulos dentro das atividades */
+.atividade h2 {
+  font-size: 1.2rem; /* Define o mesmo tamanho para todos os títulos */
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Padroniza iframes dentro das atividades */
+.atividade iframe {
+  width: 100%; /* Preenche o espaço da atividade */
+  height: 200px; /* Altura fixa */
+  border: none;
+  border-radius: 4px;
+}
+
+/* Padroniza imagens dentro das atividades */
+.atividade img {
+  width: 100%; /* Imagem se ajusta à largura */
+  height: auto; /* Mantém a proporção */
+  border-radius: 4px;
+  cursor: pointer; /* Muda o cursor para indicar interatividade */
+  margin-bottom: 10px;
+}
+
+/* Estiliza os parágrafos */
+.atividade p {
+  font-size: 1rem; /* Tamanho de texto uniforme */
+  color: #555;
+  margin: 5px 0;
 }
